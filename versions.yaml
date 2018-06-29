@@ -1,0 +1,45 @@
+# Copyright 2018 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+_variables:
+  from: &from gcr.io/google-appengine/debian9
+
+versions:
+  - dir: '0/debian9/0.5'
+    repo: prometheus-pushgateway0
+    tags:
+      - '0.5.1'
+      - '0.5'
+      - '0'
+      - '0.5.1-debian9'
+      - '0.5-debian9'
+      - '0-debian9'
+      - 'latest'
+    from: *from
+    packages:
+      pushgateway:
+        version: '0.5.1'
+        sha256: '99ad40f6b38a6e5a6504bf3ed593900eaa5713cc166a74e6d8c16ed6029a0435'
+  - dir: '0/debian9/0.4'
+    repo: prometheus-pushgateway0
+    tags:
+      - '0.4.0'
+      - '0.4'
+      - '0.4.0-debian9'
+      - '0.4-debian9'
+    from: *from
+    packages:
+      pushgateway:
+        version: '0.4.0'
+        sha256: 'e1ce58b3f2c44816e748278434d6fc91e530da77dcc34b1246e1a0f25314831f'
