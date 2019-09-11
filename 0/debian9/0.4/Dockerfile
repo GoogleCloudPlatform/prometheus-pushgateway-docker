@@ -1,6 +1,8 @@
 FROM gcr.io/google-appengine/debian9
 ENV PUSHGATEWAY_VERSION 0.4.0
 
+ENV C2D_RELEASE=${PUSHGATEWAY_VERSION}
+
 ENV PUSHGATEWAY_URL="https://github.com/prometheus/pushgateway/releases/download/v$PUSHGATEWAY_VERSION/pushgateway-$PUSHGATEWAY_VERSION.linux-amd64.tar.gz"
 ENV PUSHGATEWAY_SHA256 e1ce58b3f2c44816e748278434d6fc91e530da77dcc34b1246e1a0f25314831f
 
