@@ -3,6 +3,8 @@ FROM {{ .From }}
 {{- $pushgateway := index .Packages "pushgateway" }}
 ENV PUSHGATEWAY_VERSION {{ $pushgateway.Version }}
 
+ENV C2D_RELEASE=${PUSHGATEWAY_VERSION}
+
 ENV PUSHGATEWAY_URL="https://github.com/prometheus/pushgateway/releases/download/v$PUSHGATEWAY_VERSION/pushgateway-$PUSHGATEWAY_VERSION.linux-amd64.tar.gz"
 ENV PUSHGATEWAY_SHA256 {{ $pushgateway.Sha256 }}
 
