@@ -16,21 +16,21 @@ _variables:
   from: &from gcr.io/google-appengine/debian9
 
 versions:
-  - dir: '0/debian9/0.9'
-    repo: prometheus-pushgateway0
+  - dir: '1/debian9/1.0'
+    repo: prometheus-pushgateway1
     tags:
-      - '0.9.1-debian9'
-      - '0.9-debian9'
-      - '0-debian9'
-      - '0.9.1'
-      - '0.9'
-      - '0'
+      - '1.0.0-debian9'
+      - '1.0-debian9'
+      - '1-debian9'
+      - '1.0.0'
+      - '1.0'
+      - '1'
       - 'latest'
     from: *from
     packages:
       pushgateway:
-        version: '0.9.1'
-        sha256: '6741f8e8f4d728a907991c7a9f0a7e32e1e9cf339a9795724412e54466f2e8e1'
+        version: '1.0.0'
+        sha256: '5dc6472806ba143b9b6b54f79e5362db3b517acf92e524923fcaf4f184908505'
   - dir: '0/debian9/0.5'
     repo: prometheus-pushgateway0
     tags:
