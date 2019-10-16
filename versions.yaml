@@ -42,3 +42,8 @@ versions:
       - '0.9'
       - '0'
       - 'latest'
+    from: *from
+    packages:
+      pushgateway:
+        version: '0.9.1'
+        sha256: '6741f8e8f4d728a907991c7a9f0a7e32e1e9cf339a9795724412e54466f2e8e1'
