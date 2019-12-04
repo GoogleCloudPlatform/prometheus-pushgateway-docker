@@ -4,7 +4,7 @@ ENV PUSHGATEWAY_VERSION 0.10.0
 ENV C2D_RELEASE=${PUSHGATEWAY_VERSION}
 
 ENV PUSHGATEWAY_URL="https://github.com/prometheus/pushgateway/releases/download/v$PUSHGATEWAY_VERSION/pushgateway-$PUSHGATEWAY_VERSION.linux-amd64.tar.gz"
-ENV PUSHGATEWAY_SHA256 c5f7cd41c699cf86d01331d2ca02531c65a107b8cfef3335b0efaf4a669b12e3<Paste>
+ENV PUSHGATEWAY_SHA256 c5f7cd41c699cf86d01331d2ca02531c65a107b8cfef3335b0efaf4a669b12e3
 
 RUN set -x && \
     apt-get update && apt-get install -qq -y wget && \
