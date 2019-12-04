@@ -46,4 +46,4 @@ versions:
     packages:
       pushgateway:
         version: '0.10.0'
-        sha256: 'c5f7cd41c699cf86d01331d2ca02531c65a107b8cfef3335b0efaf4a669b12e3<Paste>'
+        sha256: 'c5f7cd41c699cf86d01331d2ca02531c65a107b8cfef3335b0efaf4a669b12e3'
