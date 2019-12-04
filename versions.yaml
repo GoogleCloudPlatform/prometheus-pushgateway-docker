@@ -32,18 +32,18 @@ versions:
         version: '1.0.0'
         sha256: '5dc6472806ba143b9b6b54f79e5362db3b517acf92e524923fcaf4f184908505'
 
-  - dir: '0/debian9/0.9'
+  - dir: '0/debian9/0.10'
     repo: prometheus-pushgateway0
     tags:
-      - '0.9.1-debian9'
-      - '0.9-debian9'
+      - '0.10.0-debian9'
+      - '0.10-debian9'
       - '0-debian9'
-      - '0.9.1'
-      - '0.9'
+      - '0.10.0'
+      - '0.10'
       - '0'
       - 'latest'
     from: *from
     packages:
       pushgateway:
-        version: '0.9.1'
-        sha256: '6741f8e8f4d728a907991c7a9f0a7e32e1e9cf339a9795724412e54466f2e8e1'
+        version: '0.10.0'
+        sha256: 'c5f7cd41c699cf86d01331d2ca02531c65a107b8cfef3335b0efaf4a669b12e3<Paste>'
