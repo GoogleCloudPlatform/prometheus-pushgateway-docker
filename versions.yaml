@@ -1,4 +1,4 @@
-# Copyright 2018 Google LLC
+# Copyright 2022 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,16 +19,15 @@ versions:
   - dir: '1/debian9/1.4'
     repo: prometheus-pushgateway1
     tags:
-      - '1.4.2-debian9'
+      - '1.4.3-debian9'
       - '1.4-debian9'
       - '1-debian9'
-      - '1.4.2'
+      - '1.4.3'
       - '1.4'
       - '1'
       - 'latest'
     from: *from
     packages:
       pushgateway:
-        version: '1.4.2'
-        sha256: 'd41df97d93a7564bf8207a8884452eb220d2124d3853682c879907c96b525a6f'
-
+        version: '1.4.3'
+        sha256: 'a8aa4bc0612b44c700454357fd4b23d687ff727f5fdc32e1fd9d48b9ce9a9301'
