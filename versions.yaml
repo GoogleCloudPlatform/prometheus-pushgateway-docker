@@ -1,4 +1,4 @@
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,15 +13,15 @@
 # limitations under the License.
 
 _variables:
-  from: &from gcr.io/google-appengine/debian9
+  from: &from marketplace.gcr.io/google/c2d-debian11
 
 versions:
-  - dir: '1/debian9/1.4'
+  - dir: '1/debian11/1.4'
     repo: prometheus-pushgateway1
     tags:
-      - '1.4.3-debian9'
-      - '1.4-debian9'
-      - '1-debian9'
+      - '1.4.3-debian11'
+      - '1.4-debian11'
+      - '1-debian11'
       - '1.4.3'
       - '1.4'
       - '1'
@@ -30,4 +30,3 @@ versions:
     packages:
       pushgateway:
         version: '1.4.3'
-        sha256: 'a8aa4bc0612b44c700454357fd4b23d687ff727f5fdc32e1fd9d48b9ce9a9301'
