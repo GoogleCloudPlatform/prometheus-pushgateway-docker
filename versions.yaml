@@ -16,18 +16,18 @@
 cloudbuild:
   enable_parallel: false
 versions:
-- dir: 1/debian11/1.5
+- dir: 1/debian11/1.6
   from: marketplace.gcr.io/google/c2d-debian11
   packages:
     pushgateway:
-      version: 1.5.1
+      version: 1.6.2
   repo: prometheus-pushgateway1
   tags:
-  - 1.5.1-debian11
-  - 1.5-debian11
+  - 1.6.2-debian11
+  - 1.6-debian11
   - 1-debian11
-  - 1.5.1
-  - '1.5'
+  - 1.6.2
+  - '1.6'
   - '1'
   - latest
 
